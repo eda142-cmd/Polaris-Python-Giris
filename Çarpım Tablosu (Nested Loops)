@@ -1,0 +1,10 @@
+def main():
+    # Satırlar için döngü
+    for i in range(1, 10):
+        # Sütunlar için döngü
+        for j in range(1, 10):
+            # end="\t" kullanarak yan yana yazdırıyoruz (Tab boşluğu)
+            print(f"{i * j}", end="\t")
+        print() # Bir satır bitince alt satıra geç
+
+main()
