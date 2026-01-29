@@ -1,0 +1,13 @@
+def main():
+    x = get_int()
+    print(f"Girdiğiniz sayı: {x}")
+
+def get_int():
+    while True:
+        try:
+            return int(input("Bir sayı giriniz: "))
+        except ValueError:
+            # Kullanıcı harf girerse burası çalışır
+            print("Lütfen geçerli bir sayı giriniz.")
+
+main()
