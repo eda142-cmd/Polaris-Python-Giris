@@ -1,0 +1,19 @@
+import random
+
+def main():
+    hedef = random.randint(1, 100)
+    
+    while True:
+        try:
+            tahmin = int(input("Tahminin nedir? "))
+            if tahmin < hedef:
+                print("Yukarı çık! ")
+            elif tahmin > hedef:
+                print("Aşağı in! ")
+            else:
+                print("Tebrikler, bildin! ")
+                break
+        except ValueError:
+            print("Lütfen bir sayı girin.")
+
+main()
