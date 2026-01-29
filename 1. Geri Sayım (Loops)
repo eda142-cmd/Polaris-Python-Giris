@@ -1,0 +1,14 @@
+def main():
+    try:
+        sayi = int(input("Kaçtan geriye sayalım? "))
+        geri_say(sayi)
+    except ValueError:
+        print("Lütfen bir sayı girin.")
+
+def geri_say(n):
+    while n > 0:
+        print(n)
+        n -= 1 # n = n - 1
+    print("Ateşle! ")
+
+main()
